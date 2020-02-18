@@ -5,12 +5,12 @@ CREATE TABLE tablename(
 );
 
 SELECT * FROM tablename;
+SELECT `field1`, `field2`,... FROM tablename.... WHERE id > 3 AND id <5
 TRUNCATE tablename;
 DROP TABLE tablename
 DROP DATABASE basename
 
-UPDATE tablename SET `fieldname` =
-'smth new' WHERE tablename.fieldname = 'smth'
+UPDATE tablename SET `fieldname` = 'smth new' WHERE tablename.fieldname = 'smth'
 
 INSERT INTO tablename (field1, field2)
 	VALUES
@@ -19,4 +19,10 @@ INSERT INTO tablename (field1, field2)
 
 ALTER TABLE tname CHANGE oldname newname TYPE
 
+
+
+
+IS NULL - сравнение с NULL
 NOT NULL - not NULL field
+
+

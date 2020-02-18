@@ -6,3 +6,4 @@ git status
 git add "filename.txt"
 git commin -m "commit"
 git push
+git push -u master......
