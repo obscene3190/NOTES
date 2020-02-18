@@ -20,8 +20,18 @@ INSERT INTO tablename (field1, field2)
 ALTER TABLE tname CHANGE oldname newname TYPE
 
 
+WHERE -> ORDER -> LIMIT
 
+ORDER BY fieldname (DESC - убывание)- сортровочка
 
+BETWEEN a AND b
+IN(a1, a2, a3) == id == a1 OR id == a2...
+WHERE name LIKE 'И%' - все имена, которые начинаются на И
+
+DISTINCT - неповторяющиеся элементы
+LIMIT n,m - ограничение выборки всега в конце записывается,
+n -сколько пропускаем, m - сколько выводим
+AND OR <>
 IS NULL - сравнение с NULL
 NOT NULL - not NULL field
 
