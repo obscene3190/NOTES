@@ -1,0 +1,22 @@
+CREATE DATABASE basename;
+CREATE TABLE tablename(
+	id INT NOT NULL AUTO_INCREMENT,
+	.....;
+);
+
+SELECT * FROM tablename;
+TRUNCATE tablename;
+DROP TABLE tablename
+DROP DATABASE basename
+
+UPDATE tablename SET `fieldname` =
+'smth new' WHERE tablename.fieldname = 'smth'
+
+INSERT INTO tablename (field1, field2)
+	VALUES
+	(...),
+	(...);
+
+ALTER TABLE tname CHANGE oldname newname TYPE
+
+NOT NULL - not NULL field
