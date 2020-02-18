@@ -1,0 +1,8 @@
+git config --global user.name "Alex"
+git config --global user.email "starkiller44@yandex.com"
+
+git init
+git status
+git add "filename.txt"
+git commin -m "commit"
+git push
