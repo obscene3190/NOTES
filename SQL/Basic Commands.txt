@@ -35,4 +35,34 @@ AND OR <>
 IS NULL - сравнение с NULL
 NOT NULL - not NULL field
 
+Индексация 
 
+CREATE INDEX iname ON tablename(fieldname)
+DROP INDEX iname ON tablename
+
+ССЫЛКИ
+
+CREATE TABLE tablename(
+	id INT NOT NULL AUTO_INCREMENT,
+	.....
+
+	FOREIGN KEY(keyname) REFERENCES tablename2(keyname2);
+);
+
+DATETIME DEFAULT CURRENT_TIMESTAMP
+
+Объединение:
+сравнение данных
+см. картинку в инете по объединению.
+
+INNER JOIN - не важно, из какой таблицы мы берем данные...(?)
+Example:
+SELECT table1,field1, table2,field2, ... FROM tableI
+INNER JOIN table2 ON table1.field1 = table2.field2
+
+RIGHT JOIN - ИЗ 1 И СРАВНИВАЕМ СО ВТОРОЙ
+
+LEFT JOIN
+Example:
+SELECT table1,field1, table2.field2 FROM table1
+LEFT JOIN table2 ON table1
