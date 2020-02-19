@@ -66,3 +66,27 @@ LEFT JOIN
 Example:
 SELECT table1,field1, table2.field2 FROM table1
 LEFT JOIN table2 ON table1
+
+ПСЕВДОНИМЫ(для полей и для табличек)
+используются для объединения
+
+поля
+SELECT fieldname AS 'FIELDNAME' FROM table
+SELECT CONCAT('NAME1 ', field, 'NAME2 ', field2) AS 'NAME1+2' FROM table1
+
+таблицы
+SELECT t1.field1 FROM table1 AS t1
+
+КОМАНДЫ
+
+SELECT COUNT(field) FROM table
+
+SELECT MIN/MAX/AVG/SUM(field) FROM table
+
+UCASE/LCASE - в верхний/нижний регистр
+
+GROUP BY:
+кол-во полей
+SELECT field, COUNT(field) AS 'amount' FROM table GROUP BY field
+
+HAVING ... какие конкректно записи
